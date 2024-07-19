@@ -1,17 +1,16 @@
-import React from 'react';
-
+import React from "react";
 
 const Footer = () => {
   return (
     <footer style={{
-      backgroundColor: '#ff006e',
+      backgroundColor: '#004e89',
+      position:'relative',
       textAlign: 'center',
-      padding: '20px 0',
-      position: '',
-      bottom: 0,
+      bottom:'0',
+      padding: '10px 0',
       width: '100%',
       borderTop: '2px solid #4CAF50',
-    
+      color: 'white',
     }}>
       <div style={{
         maxWidth: '800px',
@@ -42,4 +41,3 @@ const Footer = () => {
 };
 
 export default Footer;
-

@@ -12,7 +12,7 @@ export const Header = () => {
   return (
 
     <>
-      <header style={{ backgroundColor: '#ff006e', padding: '8px 0' }}>
+      <header style={{ backgroundColor: '#004e89', padding: '8px 0' }}>
       <div style={{ display: 'flex', alignItems: 'center' }}>
         
         <div style={{ borderRadius: '50%', overflow: 'hidden', width: '50px', height: '50px', marginRight: '10px' }}>
