@@ -1,27 +1,49 @@
+import React, { useState } from "react";
+import { users } from "../../data/users";
 
-import React from 'react';
+const UserList = () => {
+  const [filter, setFilter] = useState("");
 
-const Filter = ({ searchTerm, onChange }) => {
-  const filterNames = (event) => {
-    onChange(event.target.value);
-    console.log(filterNames)
+  const handleFilterChange = (event) => {
+    setFilter(event.target.value);
   };
 
+  const filteredUsers = users.filter((user) =>
+    user.linkLabel.toLowerCase().includes(filter.toLowerCase())
+  );
+
   return (
-    <input
-      type="text"
-      placeholder="Pesquisar nomes..."
-      value={searchTerm}
-      onChange={filterNames}
-      style={{
-        padding: '8px',
-        marginRight: '10px',
-        border: '1px solid #ccc',
-        borderRadius: '5px',
-        minWidth: '200px',
-      }}
-    />
+    <div style={{ backgroundColor: "black" }}>
+      <div style={{ textAlign: "center" }}>
+        <h1 style={{ color: "aqua" }}>Lista de Usuários</h1>
+        <input
+          type="text"
+          placeholder="Filtrar por nome"
+          value={filter}
+          onChange={handleFilterChange}
+          style={{ width: "600px", height: "30px", borderRadius: "20px" }}
+        />
+      </div>
+      <div>
+        <ol style={{ color: "aqua", width: "50%" }}>
+          {filteredUsers.map((user, index) => (
+            <li
+              key={index}
+              style={{
+                backgroundColor: "lightblue",
+                padding: "5px",
+                margin: "10px",
+                borderRadius: "10px",
+
+              }}
+            >
+              <a href={user.linkUrl}>{user.linkLabel}</a>
+             </li>
+          ))}
+          </ol>
+      </div>
+    </div>
   );
 };
 
-export default Filter;
+export default UserList;

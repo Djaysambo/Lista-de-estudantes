@@ -1,45 +1,45 @@
 import React from 'react';
 
+
 const Footer = () => {
   return (
-    <>
-      <main style={{
-        backgroundColor: '#ff006e',
-        textAlign: 'center',
-        padding: '20px 0',
-        position: 'relative',
-        bottom: 0,
-        width: '100%',
-        borderTop: '2px solid #4CAF50'
+    <footer style={{
+      backgroundColor: '#ff006e',
+      textAlign: 'center',
+      padding: '20px 0',
+      position: '',
+      bottom: 0,
+      width: '100%',
+      borderTop: '2px solid #4CAF50',
+    
+    }}>
+      <div style={{
+        maxWidth: '800px',
+        margin: '0 auto',
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        flexWrap: 'wrap'
       }}>
-        <div style={{
-          maxWidth: '800px',
-          margin: '0 auto',
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          flexWrap: 'wrap'
-        }}>
-          <div style={{ maxWidth: "1200px", margin: "0 auto", color: "aqua", fontSiz:"bold" }}>
-            <p style={{ fontSize: "1.2em", marginBottom: "2px" }} >&copy; 2024 Djay-Sambo. Todos os direitos reservados.</p>
-            <p >Desenvolvido com ❤️ por Vicente Sambo</p>
-          </div>
-          <div>
-            <a href="https://www.facebook.com/seupagina" target="_blank" rel="noopener noreferrer" style={{ color: 'white', fontSize: '20px', margin: '0 10px' }}>
-              <i className="fab fa-facebook-square"></i>
-            </a>
-            <a href="https://www.twitter.com/seupagina" target="_blank" rel="noopener noreferrer" style={{ color: 'white', fontSize: '20px', margin: '0 10px' }}>
-              <i className="fab fa-twitter-square"></i>
-            </a>
-            <a href="https://www.instagram.com/seupagina" target="_blank" rel="noopener noreferrer" style={{ color: 'white', fontSize: '20px', margin: '0 10px' }}>
-              <i className="fab fa-instagram-square"></i>
-            </a>
-          </div>
+        <div style={{ maxWidth: "1200px", margin: "0 auto", color: "aqua", fontSiz:"bold" }}>
+          <p style={{ fontSize: "1.2em", marginBottom: "2px" }} >&copy; 2024 Djay-Sambo. Todos os direitos reservados.</p>
+          <p >Desenvolvido com ❤️ por Vicente Sambo</p>
         </div>
-      </main>
-    </>
-
+        <div>
+          <a href="https://www.facebook.com/seupagina" target="_blank" rel="noopener noreferrer" style={{ color: 'white', fontSize: '20px', margin: '0 10px' }}>
+            <i className="fab fa-facebook-square"></i>
+          </a>
+          <a href="https://www.twitter.com/seupagina" target="_blank" rel="noopener noreferrer" style={{ color: 'white', fontSize: '20px', margin: '0 10px' }}>
+            <i className="fab fa-twitter-square"></i>
+          </a>
+          <a href="https://www.instagram.com/seupagina" target="_blank" rel="noopener noreferrer" style={{ color: 'white', fontSize: '20px', margin: '0 10px' }}>
+            <i className="fab fa-instagram-square"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
   );
 };
 
 export default Footer;
+

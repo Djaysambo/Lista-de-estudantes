@@ -21,9 +21,10 @@ export const Home = () => {
             </div>     
           </div>
         </div>
+        
+       
       </main>
       <Footer />
-
     </>
   );
 };

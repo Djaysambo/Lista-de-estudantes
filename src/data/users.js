@@ -1,5 +1,6 @@
 export const users = [
   {
+    
     linkUrl: "/users/alcinda-chirime",
     linkLabel: "Alcinda Chirime",
     
@@ -22,7 +23,7 @@ export const users = [
   },
   {
     linkUrl: "/users/Fransisca",
-    linkLabel: "Fransica",
+    linkLabel: "Fransica Wamba",
   },
   {
     linkUrl: "/users/franco-bomba",
