@@ -6,7 +6,12 @@ export const ErrorPage = () => {
   return (
     <>
       <Header />
-      <main></main>
+      <main className="bg-red-600">
+        <div className="">
+          <h1 className="font-bold text-center text-lg">404</h1>
+        </div>
+
+      </main>
       <Footer/>
 
     </>

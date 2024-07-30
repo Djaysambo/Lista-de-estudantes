@@ -31,7 +31,7 @@ export const UserDatails = () => {
               autem repellat facilis distinctio, consequuntur similique. Sequi
               saepe architecto corrupti debitis! Facilis, possimus?
             </p>
-            .
+            
           </h1>
         </div>
       </main>

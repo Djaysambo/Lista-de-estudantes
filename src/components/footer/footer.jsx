@@ -24,8 +24,8 @@ const Footer = () => {
           <p style={{ fontSize: "1.2em", marginBottom: "2px" }} >&copy; 2024 Djay-Sambo. Todos os direitos reservados.</p>
           <p >Desenvolvido com ❤️ por Vicente Sambo</p>
         </div>
-        <div>
-          <a href="https://www.facebook.com/seupagina" target="_blank" rel="noopener noreferrer" style={{ color: 'white', fontSize: '20px', margin: '0 10px' }}>
+        <div style={{ color: 'white', fontSize: '20px', margin: '0 10px' }}>
+          <a href="https://www.facebook.com/seupagina" target="_blank" rel="noopener noreferrer" >
             <i className="fab fa-facebook-square"></i>
           </a>
           <a href="https://www.twitter.com/seupagina" target="_blank" rel="noopener noreferrer" style={{ color: 'white', fontSize: '20px', margin: '0 10px' }}>

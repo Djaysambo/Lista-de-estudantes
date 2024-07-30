@@ -1,76 +1,76 @@
 import React, { useState } from "react";
 import { users } from "../../data/users";
-import Footer from "../footer/footer";
 
 const UserList = () => {
-  const [filter, setFilter] = useState("");
+  const [userList, setUserList] = useState(users); 
+  const [filter, setFilter] = useState(""); 
 
-   const handleFilterChange = (event) => {
+  const handleFilterChange = (event) => {
     setFilter(event.target.value);
   };
 
-  const removeUser = (users) => {
-    const updatedUsers = [...users];
-    updatedUsers.splice(users, );
-    setUsers(updatedUsers);
+  const removeUser = (id) => {
+    const updatedUsers = userList.filter(user => user.id !== id); 
+    setUserList(updatedUsers); 
   };
 
-  const filteredUsers = users.filter((user) =>
-    user.linkLabel.toLowerCase().includes(filter.toLowerCase())
+  const filteredUsers = userList.filter((user) =>
+    user.name.toLowerCase().includes(filter.toLowerCase())
   );
 
   return (
-  <>
-  <main>
-    <div style={{ backgroundColor: "black", textAlign: "center" }}>
-      <div >
+    <main>
+      <div style={{ backgroundColor: "black", textAlign: "center", padding: "20px" }}>
         <h1 style={{ color: "aqua" }}>Lista de Usuários</h1>
         <input
           type="text"
           placeholder="Filtrar por nome"
           value={filter}
           onChange={handleFilterChange}
-          style={{ width: "600px", height: "30px", borderRadius: "20px ", textAlign:'center' }}
+          style={{ borderRadius: "20px", textAlign: 'center', padding: "5px", marginBottom: "20px" }}
         />
+        <div style={{ color: "aqua" }}>
+          <ol style={{ listStyleType: "none", padding: 0 }}>
+            {filteredUsers.length > 0 ? (
+              filteredUsers.map((user) => (
+                <li
+                  key={user.id}
+                  style={{
+                    backgroundColor: "lightblue",
+                    padding: "10px",
+                    margin: "10px auto",
+                    borderRadius: "10px",
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    width: "80%",
+                    maxWidth: "600px"
+                  }}
+                >
+                  <a href={user.linkUrl} style={{ textDecoration: "none", color: "black" }}>{user.name}</a>
+                  <button
+                    onClick={() => removeUser(user.id)}
+                    style={{
+                      padding: "5px 10px",
+                      borderRadius: "5px",
+                      backgroundColor: "red",
+                      color: "white",
+                      border: "none",
+                      cursor: "pointer",
+                    }}
+                  >
+                    Remover
+                    
+                  </button>
+                </li>
+              ))
+            ) : (
+              <li style={{ color: "lightgrey" }}><h1 className="bg-red-60 text-lg font-bold">Nenhum usuário encontrado.</h1></li>
+            )}
+          </ol>
+        </div>
       </div>
-      <div style={{ color: "aqua", }}>
-        <ol >
-          {filteredUsers.map((user, index) => (
-            <li
-              key={index}
-              style={{
-                backgroundColor: "lightblue",
-                padding: "5px",
-                margin: "10px",
-                borderRadius: "10px",
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-              }}
-            >
-              <a href={user.linkUrl}>{user.linkLabel}</a>
-              <button
-                onClick={() => removeUser(index)}
-                style={{
-                  padding: "5px 10px",
-                  borderRadius: "5px",
-                  backgroundColor: "red",
-                  color: "white",
-                  border: "none",
-                  cursor: "pointer",
-                }}
-              >
-                Remover
-              </button>
-            </li>
-          ))}
-        </ol>
-      </div>
-    </div>
-
-  </main>
-   </>
-    
+    </main>
   );
 };
 

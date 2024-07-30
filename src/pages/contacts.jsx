@@ -7,11 +7,15 @@ import { SocialMidia } from "../components/social-midea/social-midia";
 export const Contacts = () => {
   return (
     <>
-    
       <Header />
-      <Detalhes />
-      <Mensagem />
-      <SocialMidia />
+      <main className="">
+        <div >
+          <Detalhes />
+        <Mensagem />
+        <SocialMidia />
+        </div>
+      </main>
+
       <Footer />
     </>
   );

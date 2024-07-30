@@ -5,116 +5,114 @@ export const users = [
   {
     id: 1,
     linkUrl: "/users/alcinda-chirime",
-    linkLabel: "Alcinda Chirime",
+   name: "Alcinda Chirime",
     
   },
   {
     id: 2,
     linkUrl: "/users/atalia-patissone",
-    linkLabel: "Atália Patissone",
+   name: "Atália Patissone",
   },
   {
     id: 3,
     linkUrl: "/users/ancha-catarina",
-    linkLabel: "Ancha Catarina",
+   name: "Ancha Catarina",
   },
   {
     id: 4,
     linkUrl: "/users/alexandre-mahumane",
-    linkLabel: "Alexandre Mahumane",
+   name: "Alexandre Mahumane",
   },
   {
     id: 5,
     linkUrl: "/users/domingos-chiconela",
-    linkLabel: "Domingos Chiconela",
+   name: "Domingos Chiconela",
   },
   {
     id: 6,
     linkUrl: "/users/Fransisca",
-    linkLabel: "Fransica Wamba",
+   name: "Fransica Wamba",
   },
   {
     id: 7,
     linkUrl: "/users/franco-bomba",
-    linkLabel: "Franco Bomba",
+   name: "Franco Bomba",
   },
   {
     id: 8,
     linkUrl: "/users/inacio-mugana",
-    linkLabel: "Inacio Mugana",
+   name: "Inacio Mugana",
   },
   {
     id: 9,
     linkUrl: "/users/georgina-manguana",
-    linkLabel: "Georgina Manguana",
+   name: "Georgina Manguana",
   },
   {
     id: 10,
     linkUrl: "/users/gerson-chuquela",
-    linkLabel: "Gerson Chuquela",
+   name: "Gerson Chuquela",
   },
   {
     id: 11,
     linkUrl: "/users/shelton-duarte",
-    linkLabel: "Shelton Duarte",
+   name: "Shelton Duarte",
   },
   {
     id: 12,
     linkUrl: "/users/isabel-duarte",
-    linkLabel: "Isabel Duarte",
+   name: "Isabel Duarte",
   },
   {
     id: 13,
     linkUrl: "/users/joaquim-ubisse",
-    linkLabel: "Joaquim Ubisse",
+   name: "Joaquim Ubisse",
   },
   {
     id: 14,
     linkUrl: "/users/luis-isibia",
-    linkLabel: "Luis Isibia",
+   name: "Luis Isibia",
   },
   {
     id: 15,
     linkUrl: "/users/maida-jane",
-    linkLabel: "Maida Jane",
+   name: "Maida Jane",
   },
   {
     id: 16,
     linkUrl: "/users/pedro-chimuze",
-    linkLabel: "Pedro Chimuze",
+   name: "Pedro Chimuze",
   },
   {
     id: 17,
     linkUrl: "/users/reginaldo-alzira",
-    linkLabel: "Reginaldo Alzira",
+   name: "Reginaldo Alzira",
   },
   {
     id: 18,
     linkUrl: "/users/shelton-duarte",
-    linkLabel: "Shelton Duarte",
+   name: "Shelton Duarte",
   },
   {
     id: 19,
     linkUrl: "/users/simao-abel",
-    linkLabel: "Simao Abel",
+   name: "Simao Abel",
   },
   {
     id: 20,
     linkUrl: "/users/sueile-badru",
-    linkLabel: "Sueile Badru",
+   name: "Sueile Badru",
   },
   {
     id: 21,
     linkUrl: "/users/Vicente Sambo Junior",
-    linkLabel: "Vicente Sambo junior",
+   name: "Vicente Sambo junior",
   },
   {
     id: 22,
     linkUrl: "/users/yuran-nhassengo",
-    linkLabel: "Yuran Nhassengo",
+   name: "Yuran Nhassengo",
   },
   
 ]
-
-
 

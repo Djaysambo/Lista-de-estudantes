@@ -12,9 +12,13 @@ export const Users = () => {
   return (
     <> 
    <Header/>
-   <Filter/>
+  
+      <Filter/>
+  
+   
     <Footer/>
     </> 
+    
   )};
 
 
