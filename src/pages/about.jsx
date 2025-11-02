@@ -1,6 +1,7 @@
 import React from "react";
 import { Header } from "../components/header/header";
 import { Gradient } from "phosphor-react";
+import { Footer } from "../components/footer/footer";
 
 export const About = () => {
   return (
@@ -15,6 +16,7 @@ export const About = () => {
       >
         about
       </div>
+      <Footer />
     </>
   );
 };
