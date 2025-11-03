@@ -10,35 +10,49 @@ export const Header = () => {
     setSearchParams({ search: searchString });
   }
   return (
-
     <>
-      <header style={{ backgroundColor: '#004e89', padding: '8px 0' }}>
-      <div style={{ display: 'flex', alignItems: 'center' }}>
-        
-        <div style={{ borderRadius: '50%', overflow: 'hidden', width: '50px', height: '50px', marginRight: '10px' }}>
-          <img src="/image1.jpg" alt="" style={{ width: '100%', height: 'auto', objectFit: 'cover' }} />
+      <header style={{ backgroundColor: "#004e89", padding: "8px 0" }}>
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <div
+            style={{
+              borderRadius: "50%",
+              overflow: "hidden",
+              width: "50px",
+              height: "50px",
+              marginRight: "10px",
+            }}
+          >
+            <img
+              src="/image1.jpg"
+              alt=""
+              style={{ width: "100%", height: "auto", objectFit: "cover" }}
+            />
+          </div>
+          <h1 style={{ borderRadius: "2px", color: "aqua", margin: "0 10px" }}>
+            Djay-Sambo
+          </h1>
         </div>
-        <h1 style={{ borderRadius: "2px", color: "aqua", margin: '0 10px' }}>Djay-Sambo</h1>
-      </div>
-          
-        <nav style={{
-          display: 'flex',
-          justifyContent: 'flex-end',
-          alignItems: 'center',
-          margin: '0 auto',
-          maxWidth: '100%',
-          paddingRight: '10px',
-          flexWrap: 'wrap'
-        }}>
+
+        <nav
+          style={{
+            display: "flex",
+            justifyContent: "flex-end",
+            alignItems: "center",
+            margin: "0 auto",
+            maxWidth: "100%",
+            paddingRight: "10px",
+            flexWrap: "wrap",
+          }}
+        >
           <Link
             to="/"
             style={{
-              margin: '0 10px',
-              color: 'aqua',
-              textDecoration: 'none',
-              padding: '8px',
-              borderRadius: '5px',
-              transition: 'background-color 0.3s ease'
+              margin: "0 10px",
+              color: "aqua",
+              textDecoration: "none",
+              padding: "8px",
+              borderRadius: "5px",
+              transition: "background-color 0.3s ease",
             }}
           >
             Home
@@ -46,12 +60,12 @@ export const Header = () => {
           <Link
             to="/users"
             style={{
-              margin: '0 10px',
-              color: 'aqua',
-              textDecoration: 'none',
-              padding: '8px',
-              borderRadius: '5px',
-              transition: 'background-color 0.3s ease'
+              margin: "0 10px",
+              color: "aqua",
+              textDecoration: "none",
+              padding: "8px",
+              borderRadius: "5px",
+              transition: "background-color 0.3s ease",
             }}
           >
             Users
@@ -59,20 +73,31 @@ export const Header = () => {
           <Link
             to="/contacts"
             style={{
-              margin: '0 10px',
-              color: 'aqua',
-              textDecoration: 'none',
-              padding: '8px',
-              borderRadius: '5px',
-              transition: 'background-color 0.3s ease'
+              margin: "0 10px",
+              color: "aqua",
+              textDecoration: "none",
+              padding: "8px",
+              borderRadius: "5px",
+              transition: "background-color 0.3s ease",
             }}
           >
             Contacts
           </Link>
+          <Link
+            to="/about"
+            style={{
+              margin: "0 10px",
+              color: "aqua",
+              textDecoration: "none",
+              padding: "8px",
+              borderRadius: "5px",
+              transition: "background-color 0.3s ease",
+            }}
+          >
+            About
+          </Link>
         </nav>
       </header>
-
     </>
-
   );
 };

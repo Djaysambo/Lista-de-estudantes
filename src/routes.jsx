@@ -4,6 +4,7 @@ import { Contacts } from "./pages/contacts";
 import { Users } from "./pages/users";
 import { UserDatails } from "./pages/user-details";
 import { ErrorPage } from "./pages/error-page";
+import { About } from "./pages/about";
 
 export const route = createBrowserRouter([
   {
@@ -22,5 +23,9 @@ export const route = createBrowserRouter([
   {
     path: "/users/:username",
     element: <UserDatails />,
+  },
+  {
+    path: "/about",
+    element: <About />,
   },
 ]);
