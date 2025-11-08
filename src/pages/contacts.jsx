@@ -8,11 +8,27 @@ export const Contacts = () => {
   return (
     <>
       <Header />
-      <main className="">
-        <div >
-          <Detalhes />
-        <Mensagem />
-        <SocialMidia />
+      <main>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-around",
+            alignItems: "flex-start",
+            flexWrap: "wrap",
+            padding: "20px",
+          }}
+        >
+          <div>
+            <Mensagem />
+          </div>
+          <div>
+            <Detalhes />
+          </div>
+        </div>
+
+        <div>
+          {" "}
+          <SocialMidia />
         </div>
       </main>
 
